@@ -1,0 +1,86 @@
+global_vars:
+  - name: input
+    type: form
+    params:
+      layout: |
+        Link: [[link]]
+
+matches:
+  # Inputs
+  - trigger: "jjic"
+    replace: |
+              icon:: 🎓
+              input:: [[course]]
+              author:: 
+              link:: {{input.link}}
+              tags:: 
+              status:: #to/read
+              
+  - trigger: "jjipd"
+    replace: |
+              icon:: 📃
+              input:: [[pdf]]
+              author:: 
+              link:: {{input.link}}
+              file:: 
+              tags:: 
+              status:: #to/read
+
+  - trigger: "jjipa"
+    replace: |
+              icon:: 🔬
+              input:: [[paper]]
+              author:: 
+              link:: {{input.link}}
+              file::
+              tags:: 
+              status:: #to/read
+
+  - trigger: "jjiv"
+    replace: |
+              ### 📺 {{input.link}}
+              input:: [[video]]
+              author:: 
+              link:: {{input.link}}
+              tags:: 
+              status:: #to/watch
+                - {{video {{input.link}}}}
+
+  - trigger: "jjia"
+    replace: |
+              ### 📝 {{input.link}}
+              input:: [[article]]
+              author:: 
+              link:: {{input.link}}
+              tags:: 
+              status:: #to/read
+
+  - trigger: "jjitw"
+    replace: |
+              ### 🐦  {{input.link}}
+              input:: [[tweet]]
+              author:: 
+              link:: {{input.link}}
+              tags:: 
+              status:: #to/read
+
+  - trigger: "jjim"
+    replace: |
+              ### 👥 {{meeting.title}}
+              input:: [[meeting]]
+              exclude-from-graph-view:: true
+              icon:: 👥
+              people::
+              area:: 
+              project:: 
+              tags::
+                - #### Objetivos
+                - #### Agenda
+                - #### Decisiones
+                - #### Next steps
+                - #### Log
+    vars:
+      - name: "meeting"
+        type: form
+        params:
+          layout: "Title [[title]]"

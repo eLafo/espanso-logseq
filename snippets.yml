@@ -1,0 +1,10 @@
+matches:
+  - trigger: "jjsz"
+    replace: |
+              ```zsh
+              ```
+
+  - trigger: "jjsp"
+    replace: |
+              ```python
+              ```

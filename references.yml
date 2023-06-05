@@ -1,0 +1,36 @@
+global_vars:
+  - name: reference
+    type: form
+    params:
+      layout: |
+        Link: [[link]]
+matches:
+  - trigger: "jjrd"
+    replace: |
+              ### 📄 {{reference.link}}
+              reference:: [[documentation]]
+              link:: {{reference.link}}
+              tags:: 
+
+  - trigger: "jjrs"
+    replace: |
+              ### 👨🏻‍💻 {{reference.link}}
+              reference:: [[software]]
+              link:: {{reference.link}}
+              tags:: 
+
+  - trigger: "jjrt"
+    replace: |
+              ### 🐾 {{reference.link}}
+              reference:: [[tutorial]]
+              link:: {{reference.link}}
+              author:: 
+              tags::
+
+  - trigger: "jjrf"
+    replace: |
+              ### 👨‍🍳 {{reference.link}}
+              reference:: [[food recipe]]
+              link:: {{reference.link}}
+              author:: 
+              tags::[[Areas/Cocina]]

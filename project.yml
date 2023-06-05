@@ -1,0 +1,15 @@
+matches:
+  # Project
+  - trigger: "jjp"
+    replace: |
+              type:: project
+              icon:: 📂
+              status:: TODO
+              area:: 
+              tags::
+              starts::
+              ends::
+              people::
+              - ## Objetivo
+              - ## Outputs
+              - ## Tasks

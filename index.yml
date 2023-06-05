@@ -1,0 +1,5 @@
+imports:
+  - "inputs.yml"
+  - "project.yml"
+  - "references.yml"
+  - "snippets.yml"
