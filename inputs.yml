@@ -36,6 +36,14 @@ matches:
               tags:: 
               status:: #to/read
 
+  - trigger: "jjipi"
+    replace: |
+              ### 🖼️ 
+              input:: [[picture]]
+              author:: 
+              link:: {{input.link}}
+              tags::
+
   - trigger: "jjiv"
     replace: |
               ### 📺 {{input.link}}
