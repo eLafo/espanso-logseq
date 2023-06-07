@@ -3,3 +3,4 @@ imports:
   - "project.yml"
   - "references.yml"
   - "snippets.yml"
+  - "outputs.yml"

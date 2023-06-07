@@ -1,0 +1,60 @@
+matches:
+  - trigger: "jjow"
+    replace: |
+      ### Working plan
+      icon:: 🗺️
+      output:: [[working plan]]
+      status:: [[draft]]
+      tags::
+
+  - trigger: "jjoe"
+    replace: |
+      ### {{email.subject}}
+      icon:: ✉️
+      output:: [[email]]
+      to:: 
+      cc::
+      reply::
+      subject:: {{email.subject}}
+      status:: [[draft]]
+      tags::
+    vars:
+      - name: "email"
+        type: form
+        params:
+          layout: "Subject: [[subject]]"
+
+  - trigger: "jjode"
+    replace: |
+      ### Demo script title
+      output:: [[demo script]]
+      icon:: 👩‍🦯
+      status:: [[draft]]
+      tags::
+
+  - trigger: "jjodo"
+    replace: |
+      ### Document title
+      output:: [[demo script]]
+      icon:: 👩‍🦯
+      status:: [[draft]]
+      tags::
+
+  - trigger: "jjol"
+    replace: |
+      ### List title
+      icon:: 🧾
+      output:: [[list]]
+      status:: [[draft]]
+      project:: 
+      tags::
+
+  - trigger: "jjos"
+    replace: |
+      ### Software title
+      icon:: 👨🏻‍💻
+      output:: [[software]]
+      status:: draft
+      link:: 
+      project:: 
+      tags::

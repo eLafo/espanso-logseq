@@ -7,30 +7,30 @@ global_vars:
 matches:
   - trigger: "jjrd"
     replace: |
-              ### 📄 {{reference.link}}
-              reference:: [[documentation]]
-              link:: {{reference.link}}
-              tags:: 
+      ### 📄 {{reference.link}}
+      reference:: [[documentation]]
+      link:: {{reference.link}}
+      tags::
 
   - trigger: "jjrs"
     replace: |
-              ### 👨🏻‍💻 {{reference.link}}
-              reference:: [[software]]
-              link:: {{reference.link}}
-              tags:: 
+      ### 👨🏻‍💻 {{reference.link}}
+      reference:: [[software]]
+      link:: {{reference.link}}
+      tags::
 
   - trigger: "jjrt"
     replace: |
-              ### 🐾 {{reference.link}}
-              reference:: [[tutorial]]
-              link:: {{reference.link}}
-              author:: 
-              tags::
+      ### 🐾 {{reference.link}}
+      reference:: [[tutorial]]
+      link:: {{reference.link}}
+      author:: 
+      tags::
 
   - trigger: "jjrf"
     replace: |
-              ### 👨‍🍳 {{reference.link}}
-              reference:: [[food recipe]]
-              link:: {{reference.link}}
-              author:: 
-              tags::[[Areas/Cocina]]
+      ### 👨‍🍳 {{reference.link}}
+      reference:: [[food recipe]]
+      link:: {{reference.link}}
+      author:: 
+      tags::[[Areas/Cocina]]
