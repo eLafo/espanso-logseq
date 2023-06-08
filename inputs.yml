@@ -71,6 +71,7 @@ matches:
               link:: {{input.link}}
               status:: #to/read
               tags:: 
+                - {{tweet {{input.link}}}}
 
   - trigger: "jjim"
     replace: |
