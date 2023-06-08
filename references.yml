@@ -27,6 +27,14 @@ matches:
       author:: 
       tags::
 
+  - trigger: "jjrg"
+    replace: |
+      ### 📚 {{reference.link}}
+      reference:: [[glossary]]
+      link:: {{reference.link}}
+      author:: 
+      tags::
+
   - trigger: "jjrf"
     replace: |
       ### 👨‍🍳 {{reference.link}}

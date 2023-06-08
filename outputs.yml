@@ -58,3 +58,13 @@ matches:
       link:: 
       project:: 
       tags::
+
+  - trigger: "jjoc"
+    replace: |
+      ### Notebook title
+      icon:: 📙
+      output:: [[google colab]]
+      status:: draft
+      link:: 
+      project:: 
+      tags::
