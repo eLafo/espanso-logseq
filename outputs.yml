@@ -1,3 +1,10 @@
+global_vars:
+  - name: output
+    type: form
+    params:
+      layout: |
+        Link: [[link]]
+
 matches:
   - trigger: "jjow"
     replace: |
@@ -65,6 +72,6 @@ matches:
       icon:: 📙
       output:: [[google colab]]
       status:: draft
-      link:: 
+      link:: {{output.link}}
       project:: 
       tags::
