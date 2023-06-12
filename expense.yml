@@ -1,0 +1,33 @@
+matches: 
+  - trigger: jje
+    replace: |
+      ### 🫰 {{expense.title}}
+      type:: [[expense]] 
+      icon:: 🫰
+      area:: [[Areas/Work/Expenses]]
+      link:: 
+      tags:: [[Logseq]] 
+      date:: [[Mon, 29-05-2023]] 
+      provider:: [[Logseq]]
+      amount:: [[expense.amount]]
+      recurring:: [[expense.recurring]]
+    vars:
+      - name: "expense"
+        type: form
+        params:
+          layout: |
+            Title: [[title]]
+            Cantidad: [[amount]]
+            Moneda: [[currency]]
+            Recurring: [[recurring]]
+          fields:
+            currency:
+              type: choice
+              values:
+                - "EUR"
+                - "USD"
+            recurring:
+              type: choice
+              values:
+                - "true"
+                - "false"
