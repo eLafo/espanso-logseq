@@ -7,87 +7,107 @@ global_vars:
 
 matches:
   # Inputs
-  - trigger: "jjic"
+  - trigger: "jjico"
     replace: |
-              icon:: 🎓
-              input:: [[course]]
-              author:: 
-              link:: {{input.link}}
-              status:: #to/read
-              tags:: 
-              
+      icon:: 🎓
+      input:: [[course]]
+      author:: 
+      link:: {{input.link}}
+      status:: TODO
+      tags::
+
+  - trigger: "jjich"
+    replace: |
+      icon:: 🎓
+      input:: [[chapter]]
+      course::
+      author::
+      link::{{input.link}}
+      tags::
+      status:: TODO
+
   - trigger: "jjipd"
     replace: |
-              icon:: 📃
-              input:: [[pdf]]
-              author:: 
-              link:: {{input.link}}
-              file:: 
-              status:: #to/read
-              tags:: 
+      icon:: 📃
+      input:: [[pdf]]
+      author:: 
+      link:: {{input.link}}
+      file:: 
+      status:: #to/read
+      tags::
+
+  - trigger: "jjib"
+    replace: |
+      icon:: 📖
+      input:: [[book]]
+      author:: 
+      link:: {{input.link}}
+      file:: 
+      status:: #to/read
+      tags::
 
   - trigger: "jjipa"
     replace: |
-              icon:: 🔬
-              input:: [[paper]]
-              author:: 
-              link:: {{input.link}}
-              file::
-              status:: #to/read
-              tags:: 
+      icon:: 🔬
+      input:: [[paper]]
+      author:: 
+      link:: {{input.link}}
+      file::
+      status:: #to/read
+      tags::
 
   - trigger: "jjipi"
     replace: |
-              ### 🖼️ 
-              input:: [[picture]]
-              author:: 
-              link:: {{input.link}}
-              tags::
+      ### 🖼️ 
+      input:: [[picture]]
+      author:: 
+      link:: {{input.link}}
+      tags::
 
   - trigger: "jjiv"
     replace: |
-              ### 📺 {{input.link}}
-              input:: [[video]]
-              author:: 
-              link:: {{input.link}}
-              status:: #to/watch
-              tags:: 
-                - {{video {{input.link}}}}
+      ### 📺 {{input.link}}
+      input:: [[video]]
+      author:: 
+      link:: {{input.link}}
+      status:: #to/watch
+      tags:: 
+        - {{video {{input.link}}}}
 
   - trigger: "jjia"
     replace: |
-              ### 📝 {{input.link}}
-              input:: [[article]]
-              author:: 
-              link:: {{input.link}}
-              status:: #to/read
-              tags:: 
+      ### 📝 {{input.link}}
+      input:: [[article]]
+      author:: 
+      link:: {{input.link}}
+      status:: #to/read
+      tags::
 
   - trigger: "jjitw"
     replace: |
-              ### 🐦  {{input.link}}
-              input:: [[tweet]]
-              author:: 
-              link:: {{input.link}}
-              status:: #to/read
-              tags:: 
-                - {{tweet {{input.link}}}}
+      ### 🐦  {{input.link}}
+      input:: [[tweet]]
+      author:: 
+      link:: {{input.link}}
+      status:: #to/read
+      tags:: 
+        - {{tweet {{input.link}}}}
 
   - trigger: "jjim"
     replace: |
-              ### 👥 {{meeting.title}}
-              input:: [[meeting]]
-              exclude-from-graph-view:: true
-              icon:: 👥
-              people::
-              area:: 
-              project:: 
-              tags::
-                - #### Objetivos
-                - #### Agenda
-                - #### Decisiones
-                - #### Next steps
-                - #### Log
+      ### 👥 {{meeting.title}}
+      input:: [[meeting]]
+      exclude-from-graph-view:: true
+      icon:: 👥
+      people::
+      area:: 
+      project:: 
+      tags::
+        - #### Objetivos
+        - #### Agenda
+        - #### Decisiones
+        - #### Next steps
+        - #### Log
     vars:
       - name: "meeting"
         type: form
