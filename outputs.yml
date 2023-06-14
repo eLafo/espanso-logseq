@@ -75,3 +75,13 @@ matches:
       link:: {{output.link}}
       project:: 
       tags::
+
+  - trigger: "jjox"
+    replace: |
+      ### Excel title
+      icon:: 📊
+      output:: [[excel]]
+      status:: draft
+      link:: {{output.link}}
+      project:: 
+      tags::
