@@ -5,6 +5,13 @@ global_vars:
       layout: |
         Link: [[link]]
 matches:
+  - trigger: "jjrw"
+    replace: |
+      ### 📖 {{reference.link}}
+      reference:: [[website]]
+      link:: {{reference.link}}
+      tags::
+
   - trigger: "jjrd"
     replace: |
       ### 📄 {{reference.link}}
