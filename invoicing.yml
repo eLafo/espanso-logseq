@@ -1,0 +1,12 @@
+matches:
+  - trigger: "jjin"
+    replace: |
+      icon:: 🧾
+      type:: [[invoicing]]
+      status:: draft
+      link:: {{output.link}}
+      area:: [[Areas/Work/Autónomo]]
+      starts:: 
+      ends:: 
+      People::
+      tags::

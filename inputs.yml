@@ -93,6 +93,13 @@ matches:
       tags:: 
         - {{tweet {{input.link}}}}
 
+  - trigger: "jjicg"
+    replace: |
+      ### 🤖 {{input.link}}
+      input:: [[chatgpt]]
+      link {{input.link}}
+      tags::
+
   - trigger: "jjim"
     replace: |
       ### 👥 {{meeting.title}}

@@ -1,6 +1,7 @@
 imports:
   - "expense.yml"
   - "inputs.yml"
+  - "invoicing.yml"
   - "project.yml"
   - "references.yml"
   - "snippets.yml"

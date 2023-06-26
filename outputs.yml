@@ -85,3 +85,14 @@ matches:
       link:: {{output.link}}
       project:: 
       tags::
+
+  - trigger: "jjoi"
+    replace: |
+      icon:: 🧾
+      type:: [[invoicing]]
+      status:: draft
+      link:: {{output.link}}
+      area:: [[Areas/Work/Autónomo]]
+      from:: 
+      to:: 
+      amount::
