@@ -6,6 +6,15 @@ global_vars:
         Link: [[link]]
 
 matches:
+  - trigger: "jjoa"
+    replace: |
+      ### {{output.link}}
+      output:: [[app]]
+      icon:: 📱
+      link:: {{output.link}}
+      output:: [[app]]
+      tags:: 
+
   - trigger: "jjow"
     replace: |
       ### Working plan
@@ -58,11 +67,11 @@ matches:
 
   - trigger: "jjos"
     replace: |
-      ### Software title
+      ### {{output.link}}
       icon:: 👨🏻‍💻
       output:: [[software]]
       status:: draft
-      link:: 
+      link:: {{output.link}}
       project:: 
       tags::
 
