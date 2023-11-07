@@ -5,6 +5,14 @@ global_vars:
       layout: |
         Link: [[link]]
 matches:
+  - trigger: "jjrp"
+    replace: |
+      reference:: [[prompt]]
+      source:: {{reference.link}}
+      author::
+      tags:: [[Areas/Master personal en IA]] [[AI Prompts]]
+        - ```txt
+          ```
   - trigger: "jjrw"
     replace: |
       ### 📖 {{reference.link}}
