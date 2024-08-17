@@ -18,6 +18,7 @@ matches:
   - trigger: "jjon"
     replace: |
       icon::  🌱
+      output:: [[note]]
       status:: [[seed]]
       tags:: 
       exclude-from-graph-view:: true
