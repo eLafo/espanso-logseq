@@ -15,6 +15,13 @@ matches:
       output:: [[app]]
       tags:: 
 
+  - trigger: "jjon"
+    replace: |
+      icon::  🌱
+      status:: [[seed]]
+      tags:: 
+      exclude-from-graph-view:: true
+
   - trigger: "jjow"
     replace: |
       ### Working plan
